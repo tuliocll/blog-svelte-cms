@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_links_menus",
+  "info": {
+    "displayName": "Menus",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Pages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.social-links"
+    }
+  }
+}

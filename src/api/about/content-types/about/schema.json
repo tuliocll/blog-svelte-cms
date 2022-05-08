@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "Sobre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogName": {
+      "type": "string"
+    },
+    "aboutMe": {
+      "type": "text"
+    },
+    "SocialLinks": {
+      "displayName": "SocialLinks",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.social-links"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

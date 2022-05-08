@@ -24,7 +24,7 @@
     },
     "cover": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -32,6 +32,9 @@
         "videos",
         "audios"
       ]
+    },
+    "coverLegend": {
+      "type": "richtext"
     }
   }
 }

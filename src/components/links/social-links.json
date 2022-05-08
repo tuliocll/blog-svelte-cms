@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_links_social_links",
+  "info": {
+    "displayName": "SocialLinks",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
