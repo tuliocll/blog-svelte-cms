@@ -18,7 +18,7 @@
     "aboutMe": {
       "type": "text"
     },
-    "SocialLinks": {
+    "socialLinks": {
       "displayName": "SocialLinks",
       "type": "component",
       "repeatable": true,
@@ -34,6 +34,17 @@
         "videos",
         "audios"
       ]
+    },
+    "pages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.social-links"
+    },
+    "blogSubtitle": {
+      "type": "text"
+    },
+    "newsletterText": {
+      "type": "text"
     }
   }
 }
