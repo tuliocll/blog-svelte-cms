@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_key_value_key_values",
+  "info": {
+    "displayName": "KeyValue",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "value": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

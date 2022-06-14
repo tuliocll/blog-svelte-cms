@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "feature_toggles",
+  "info": {
+    "singularName": "feature-toggle",
+    "pluralName": "feature-toggles",
+    "displayName": "Feature Toggle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Variable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "key-value.key-value"
+    }
+  }
+}
