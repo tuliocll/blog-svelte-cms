@@ -8,7 +8,7 @@ module.exports = {
 
       await strapi.query("api::post.post").update({
         where: { slug: "testeando-localhost" },
-        data: { views: article.views + 1 },
+        data: { views: article.views || 0 + 1 },
       });
     }
   },
