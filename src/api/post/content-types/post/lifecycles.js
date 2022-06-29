@@ -8,6 +8,10 @@ module.exports = {
         where: { slug },
       });
 
+      if (!article) {
+        return;
+      }
+
       const views = article.views || 0;
 
       await strapi.query("api::post.post").update({
