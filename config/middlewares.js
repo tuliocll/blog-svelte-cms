@@ -32,4 +32,10 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  {
+    name: "global::TraceMiddleware",
+    config: {
+      enable: false,
+    },
+  },
 ];

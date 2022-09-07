@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
+const Sentry = require("@sentry/node");
 
 module.exports = {
   /**
@@ -7,7 +8,17 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register({ strapi }) {
+    Sentry.init({
+      dsn: process.env.SENTRY_DNS || "",
+
+      // We recommend adjusting this value in production, or using tracesSampler
+      // for finer control
+      tracesSampleRate: 1.0,
+    });
+
+    strapi.Sentry = Sentry;
+  },
 
   /**
    * An asynchronous bootstrap function that runs before
